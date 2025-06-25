@@ -11,8 +11,9 @@ typedef struct {
     uint32_t echo_count;
 } hc_sr04_t;
 
-hc_sr04_err_t
-hc_sr04_initialize(hc_sr04_t* hc_sr04, hc_sr04_config_t const* config, hc_sr04_interface_t const* interface);
+hc_sr04_err_t hc_sr04_initialize(hc_sr04_t* hc_sr04,
+                                 hc_sr04_config_t const* config,
+                                 hc_sr04_interface_t const* interface);
 hc_sr04_err_t hc_sr04_deinitialize(hc_sr04_t* hc_sr04);
 
 hc_sr04_err_t hc_sr04_transmit_trig_signal(hc_sr04_t const* hc_sr04);
