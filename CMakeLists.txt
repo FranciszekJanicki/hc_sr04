@@ -4,10 +4,8 @@ target_sources(hc_sr04 PRIVATE
     "hc_sr04.c"
 )
 
-target_include_directories(hc_sr04 PUBLIC 
-)
-
-target_link_libraries(hc_sr04 PRIVATE
+target_include_directories(hc_sr04 PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 target_compile_options(hc_sr04 PUBLIC
